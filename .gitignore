@@ -1,0 +1,19 @@
+# --- Security (NEVER UPLOAD THESE) ---
+aws-key.pem
+*.pem
+.env
+backend/.env
+
+# --- System & Heavy Files ---
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# --- Web Project Files ---
+ai-stock-news-web/node_modules/
+ai-stock-news-web/www/
+ai-stock-news-web/dist/
+ai-stock-news-web/.angular/

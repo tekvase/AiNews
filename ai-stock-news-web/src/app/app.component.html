@@ -1,0 +1,85 @@
+<h1>AI Stock News & Sentiment</h1>
+
+<!-- 1. SEARCH BOX -->
+<div class="search-box">
+  <input 
+    [(ngModel)]="symbol" 
+    placeholder="Enter Symbol (e.g. AAPL)" 
+    (keyup.enter)="search()" 
+  />
+  <button (click)="search()" [disabled]="loading">
+    {{ loading ? '...' : 'Search' }}
+  </button>
+</div>
+
+<!-- 2. LOADING & ERROR MESSAGES -->
+<div *ngIf="loading" class="loading">
+  Running AI Analysis...
+</div>
+
+<div *ngIf="error" class="error">
+  {{ error }}
+</div>
+
+<!-- 3. MAIN RESULTS (Only shows if stockData exists) -->
+<div *ngIf="stockData" class="results-container">
+
+  <!-- A. PRICE SECTION -->
+  <div class="price-header">
+    <h2>{{ stockData.symbol }}</h2>
+    <h1>${{ stockData.price }}</h1>
+  </div>
+
+  <!-- B. SENTIMENT DASHBOARD -->
+  <div class="sentiment-summary">
+    <h3>
+      Signal: 
+      <span [ngClass]="{
+          'buy': stockData.sentiment.signal === 'BUY',
+          'sell': stockData.sentiment.signal === 'SELL',
+          'neutral': stockData.sentiment.signal === 'NEUTRAL'
+        }">
+        {{ stockData.sentiment.signal }}
+      </span>
+    </h3>
+
+    <!-- Stats Grid -->
+    <div class="stats-row">
+      <div>
+        <strong>{{ stockData.sentiment.buy_score }}</strong><br>Score
+      </div>
+      <div>
+        <strong style="color: green">{{ stockData.sentiment.positive }}</strong><br>Pos
+      </div>
+      <div>
+        <strong style="color: red">{{ stockData.sentiment.negative }}</strong><br>Neg
+      </div>
+    </div>
+  </div>
+
+  <!-- C. NEWS LIST -->
+  <div class="news-list">
+    <h3>Latest Articles</h3>
+    
+    <div *ngFor="let item of stockData.news" class="news-item">
+      <h4>{{ item.headline }}</h4>
+      
+      <div class="news-meta">
+        <!-- Sentiment Badge -->
+        <span class="sentiment" [ngClass]="{
+            'pos': item.sentiment === 'positive',
+            'neg': item.sentiment === 'negative',
+            'neu': item.sentiment === 'neutral'
+          }">
+          {{ item.sentiment | uppercase }}
+        </span>
+        
+        <!-- Date -->
+        <span class="date">
+          {{ item.datetime * 1000 | date:'MMM d' }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>

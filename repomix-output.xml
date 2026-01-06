@@ -1,0 +1,3006 @@
+This file is a merged representation of a subset of the codebase, containing files not matching ignore patterns, combined into a single document by Repomix.
+
+<file_summary>
+This section contains a summary of this file.
+
+<purpose>
+This file contains a packed representation of a subset of the repository's contents that is considered the most important context.
+It is designed to be easily consumable by AI systems for analysis, code review,
+or other automated processes.
+</purpose>
+
+<file_format>
+The content is organized as follows:
+1. This summary section
+2. Repository information
+3. Directory structure
+4. Repository files (if enabled)
+5. Multiple file entries, each consisting of:
+  - File path as an attribute
+  - Full contents of the file
+</file_format>
+
+<usage_guidelines>
+- This file should be treated as read-only. Any changes should be made to the
+  original repository files, not this packed version.
+- When processing this file, use the file path to distinguish
+  between different files in the repository.
+- Be aware that this file may contain sensitive information. Handle it with
+  the same level of security as you would the original repository.
+</usage_guidelines>
+
+<notes>
+- Some files may have been excluded based on .gitignore rules and Repomix's configuration
+- Binary files are not included in this packed representation. Please refer to the Repository Structure section for a complete list of file paths, including binary files
+- Files matching these patterns are excluded: node_modules, venv, Pods, dist, .git
+- Files matching patterns in .gitignore are excluded
+- Files matching default ignore patterns are excluded
+- Files are sorted by Git change count (files with more changes are at the bottom)
+</notes>
+
+</file_summary>
+
+<directory_structure>
+.gitignore
+ai-stock-news-web/.editorconfig
+ai-stock-news-web/.gitignore
+ai-stock-news-web/.vscode/extensions.json
+ai-stock-news-web/.vscode/launch.json
+ai-stock-news-web/.vscode/tasks.json
+ai-stock-news-web/android/.gitignore
+ai-stock-news-web/android/app/.gitignore
+ai-stock-news-web/android/app/build.gradle
+ai-stock-news-web/android/app/capacitor.build.gradle
+ai-stock-news-web/android/app/proguard-rules.pro
+ai-stock-news-web/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java
+ai-stock-news-web/android/app/src/main/AndroidManifest.xml
+ai-stock-news-web/android/app/src/main/java/com/myapp/ai/stocknews/MainActivity.java
+ai-stock-news-web/android/app/src/main/res/drawable-land-hdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-land-mdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-land-xhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-land-xxhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-land-xxxhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-port-hdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-port-mdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-port-xhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-port-xxhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-port-xxxhdpi/splash.png
+ai-stock-news-web/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml
+ai-stock-news-web/android/app/src/main/res/drawable/ic_launcher_background.xml
+ai-stock-news-web/android/app/src/main/res/drawable/splash.png
+ai-stock-news-web/android/app/src/main/res/layout/activity_main.xml
+ai-stock-news-web/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml
+ai-stock-news-web/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml
+ai-stock-news-web/android/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png
+ai-stock-news-web/android/app/src/main/res/mipmap-hdpi/ic_launcher_round.png
+ai-stock-news-web/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+ai-stock-news-web/android/app/src/main/res/mipmap-mdpi/ic_launcher_foreground.png
+ai-stock-news-web/android/app/src/main/res/mipmap-mdpi/ic_launcher_round.png
+ai-stock-news-web/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xhdpi/ic_launcher_foreground.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_foreground.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
+ai-stock-news-web/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+ai-stock-news-web/android/app/src/main/res/values/ic_launcher_background.xml
+ai-stock-news-web/android/app/src/main/res/values/strings.xml
+ai-stock-news-web/android/app/src/main/res/values/styles.xml
+ai-stock-news-web/android/app/src/main/res/xml/file_paths.xml
+ai-stock-news-web/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java
+ai-stock-news-web/android/build.gradle
+ai-stock-news-web/android/capacitor.settings.gradle
+ai-stock-news-web/android/gradle.properties
+ai-stock-news-web/android/gradle/wrapper/gradle-wrapper.jar
+ai-stock-news-web/android/gradle/wrapper/gradle-wrapper.properties
+ai-stock-news-web/android/gradlew
+ai-stock-news-web/android/gradlew.bat
+ai-stock-news-web/android/settings.gradle
+ai-stock-news-web/android/variables.gradle
+ai-stock-news-web/angular.json
+ai-stock-news-web/capacitor.config.ts
+ai-stock-news-web/ionic.config.json
+ai-stock-news-web/ios/.gitignore
+ai-stock-news-web/ios/App/App.xcodeproj/project.pbxproj
+ai-stock-news-web/ios/App/App.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+ai-stock-news-web/ios/App/App/AppDelegate.swift
+ai-stock-news-web/ios/App/App/Assets.xcassets/AppIcon.appiconset/AppIcon-512@2x.png
+ai-stock-news-web/ios/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json
+ai-stock-news-web/ios/App/App/Assets.xcassets/Contents.json
+ai-stock-news-web/ios/App/App/Assets.xcassets/Splash.imageset/Contents.json
+ai-stock-news-web/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-1.png
+ai-stock-news-web/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732-2.png
+ai-stock-news-web/ios/App/App/Assets.xcassets/Splash.imageset/splash-2732x2732.png
+ai-stock-news-web/ios/App/App/Base.lproj/LaunchScreen.storyboard
+ai-stock-news-web/ios/App/App/Base.lproj/Main.storyboard
+ai-stock-news-web/ios/App/App/Info.plist
+ai-stock-news-web/ios/App/CapApp-SPM/.gitignore
+ai-stock-news-web/ios/App/CapApp-SPM/Package.swift
+ai-stock-news-web/ios/App/CapApp-SPM/README.md
+ai-stock-news-web/ios/App/CapApp-SPM/Sources/CapApp-SPM/CapApp-SPM.swift
+ai-stock-news-web/ios/debug.xcconfig
+ai-stock-news-web/package.json
+ai-stock-news-web/public/favicon.ico
+ai-stock-news-web/README.md
+ai-stock-news-web/src/app/app.component.css
+ai-stock-news-web/src/app/app.component.html
+ai-stock-news-web/src/app/app.component.ts
+ai-stock-news-web/src/app/app.config.ts
+ai-stock-news-web/src/app/app.routes.ts
+ai-stock-news-web/src/app/app.spec.ts
+ai-stock-news-web/src/app/models/stock-news.model.ts
+ai-stock-news-web/src/app/services/news.service.ts
+ai-stock-news-web/src/environments/environment.prod.ts
+ai-stock-news-web/src/environments/environment.ts
+ai-stock-news-web/src/index.html
+ai-stock-news-web/src/main.ts
+ai-stock-news-web/src/styles.css
+ai-stock-news-web/tsconfig.app.json
+ai-stock-news-web/tsconfig.json
+ai-stock-news-web/tsconfig.spec.json
+backend/main.py
+backend/requirements.txt
+runtime.txt
+</directory_structure>
+
+<files>
+This section contains the contents of the repository's files.
+
+<file path="ai-stock-news-web/ios/.gitignore">
+App/build
+App/Pods
+App/output
+App/App/public
+DerivedData
+xcuserdata
+
+# Cordova plugins for Capacitor
+capacitor-cordova-ios-plugins
+
+# Generated Config files
+App/App/capacitor.config.json
+App/App/config.xml
+</file>
+
+<file path="ai-stock-news-web/ios/App/App.xcodeproj/project.pbxproj">
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2FAD9763203C412B000D30F8 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = 2FAD9762203C412B000D30F8 /* config.xml */; };
+		4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */ = {isa = PBXBuildFile; productRef = 4D22ABE82AF431CB00220026 /* CapApp-SPM */; };
+		50379B232058CBB4000EE86E /* capacitor.config.json in Resources */ = {isa = PBXBuildFile; fileRef = 50379B222058CBB4000EE86E /* capacitor.config.json */; };
+		504EC3081FED79650016851F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 504EC3071FED79650016851F /* AppDelegate.swift */; };
+		504EC30D1FED79650016851F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30B1FED79650016851F /* Main.storyboard */; };
+		504EC30F1FED79650016851F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 504EC30E1FED79650016851F /* Assets.xcassets */; };
+		504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 504EC3101FED79650016851F /* LaunchScreen.storyboard */; };
+		50B271D11FEDC1A000F3C39B /* public in Resources */ = {isa = PBXBuildFile; fileRef = 50B271D01FEDC1A000F3C39B /* public */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2FAD9762203C412B000D30F8 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = config.xml; sourceTree = "<group>"; };
+		50379B222058CBB4000EE86E /* capacitor.config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = capacitor.config.json; sourceTree = "<group>"; };
+		504EC3041FED79650016851F /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		504EC3071FED79650016851F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		504EC30C1FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		504EC30E1FED79650016851F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		504EC3111FED79650016851F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		504EC3131FED79650016851F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50B271D01FEDC1A000F3C39B /* public */ = {isa = PBXFileReference; lastKnownFileType = folder; path = public; sourceTree = "<group>"; };
+		958DCC722DB07C7200EA8C5F /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = debug.xcconfig; path = ../debug.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		504EC3011FED79650016851F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D22ABE92AF431CB00220026 /* CapApp-SPM in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		504EC2FB1FED79650016851F = {
+			isa = PBXGroup;
+			children = (
+				958DCC722DB07C7200EA8C5F /* debug.xcconfig */,
+				504EC3061FED79650016851F /* App */,
+				504EC3051FED79650016851F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		504EC3051FED79650016851F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				504EC3041FED79650016851F /* App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		504EC3061FED79650016851F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				50379B222058CBB4000EE86E /* capacitor.config.json */,
+				504EC3071FED79650016851F /* AppDelegate.swift */,
+				504EC30B1FED79650016851F /* Main.storyboard */,
+				504EC30E1FED79650016851F /* Assets.xcassets */,
+				504EC3101FED79650016851F /* LaunchScreen.storyboard */,
+				504EC3131FED79650016851F /* Info.plist */,
+				2FAD9762203C412B000D30F8 /* config.xml */,
+				50B271D01FEDC1A000F3C39B /* public */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		504EC3031FED79650016851F /* App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */;
+			buildPhases = (
+				504EC3001FED79650016851F /* Sources */,
+				504EC3011FED79650016851F /* Frameworks */,
+				504EC3021FED79650016851F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = App;
+			packageProductDependencies = (
+				4D22ABE82AF431CB00220026 /* CapApp-SPM */,
+			);
+			productName = App;
+			productReference = 504EC3041FED79650016851F /* App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		504EC2FC1FED79650016851F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					504EC3031FED79650016851F = {
+						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1100;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 504EC2FB1FED79650016851F;
+			packageReferences = (
+				D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */,
+			);
+			productRefGroup = 504EC3051FED79650016851F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				504EC3031FED79650016851F /* App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		504EC3021FED79650016851F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504EC3121FED79650016851F /* LaunchScreen.storyboard in Resources */,
+				50B271D11FEDC1A000F3C39B /* public in Resources */,
+				504EC30F1FED79650016851F /* Assets.xcassets in Resources */,
+				50379B232058CBB4000EE86E /* capacitor.config.json in Resources */,
+				504EC30D1FED79650016851F /* Main.storyboard in Resources */,
+				2FAD9763203C412B000D30F8 /* config.xml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		504EC3001FED79650016851F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				504EC3081FED79650016851F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		504EC30B1FED79650016851F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC30C1FED79650016851F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		504EC3101FED79650016851F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				504EC3111FED79650016851F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		504EC3141FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		504EC3151FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		504EC3171FED79650016851F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 958DCC722DB07C7200EA8C5F /* debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" \"-DDEBUG\"";
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.ai.stocknews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		504EC3181FED79650016851F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				INFOPLIST_FILE = App/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.myapp.ai.stocknews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		504EC2FF1FED79650016851F /* Build configuration list for PBXProject "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3141FED79650016851F /* Debug */,
+				504EC3151FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		504EC3161FED79650016851F /* Build configuration list for PBXNativeTarget "App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				504EC3171FED79650016851F /* Debug */,
+				504EC3181FED79650016851F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "CapApp-SPM";
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4D22ABE82AF431CB00220026 /* CapApp-SPM */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C12C0A2AAA248700AAC8A2 /* XCLocalSwiftPackageReference "CapApp-SPM" */;
+			productName = "CapApp-SPM";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 504EC2FC1FED79650016851F /* Project object */;
+}
+</file>
+
+<file path="ai-stock-news-web/ios/App/App.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDEDidComputeMac32BitWarning</key>
+	<true/>
+</dict>
+</plist>
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/AppDelegate.swift">
+import UIKit
+import Capacitor
+
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+    var window: UIWindow?
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
+        // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
+        // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        // Called as part of the transition from the background to the active state; here you can undo many of the changes made on entering the background.
+    }
+
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    }
+
+    func applicationWillTerminate(_ application: UIApplication) {
+        // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+
+    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey: Any] = [:]) -> Bool {
+        // Called when the app was launched with a url. Feel free to add additional processing here,
+        // but if you want the App API to support tracking app url opens, make sure to keep this call
+        return ApplicationDelegateProxy.shared.application(app, open: url, options: options)
+    }
+
+    func application(_ application: UIApplication, continue userActivity: NSUserActivity, restorationHandler: @escaping ([UIUserActivityRestoring]?) -> Void) -> Bool {
+        // Called when the app was launched with an activity, including Universal Links.
+        // Feel free to add additional processing here, but if you want the App API to support
+        // tracking app url opens, make sure to keep this call
+        return ApplicationDelegateProxy.shared.application(application, continue: userActivity, restorationHandler: restorationHandler)
+    }
+
+}
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Assets.xcassets/AppIcon.appiconset/Contents.json">
+{
+  "images" : [
+    {
+      "filename" : "AppIcon-512@2x.png",
+      "idiom" : "universal",
+      "platform" : "ios",
+      "size" : "1024x1024"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Assets.xcassets/Contents.json">
+{
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Assets.xcassets/Splash.imageset/Contents.json">
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "filename" : "splash-2732x2732-2.png",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "splash-2732x2732-1.png",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "splash-2732x2732.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Base.lproj/LaunchScreen.storyboard">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <imageView key="view" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Splash" id="snD-IY-ifK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </imageView>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Splash" width="1366" height="1366"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Base.lproj/Main.storyboard">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14111" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+    </dependencies>
+    <scenes>
+        <!--Bridge View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="CAPBridgeViewController" customModule="Capacitor" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
+</file>
+
+<file path="ai-stock-news-web/ios/App/App/Info.plist">
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CAPACITOR_DEBUG</key>
+	<string>$(CAPACITOR_DEBUG)</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleDisplayName</key>
+        <string>AI STOCKS</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>$(MARKETING_VERSION)</string>
+	<key>CFBundleVersion</key>
+	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
+</dict>
+</plist>
+</file>
+
+<file path="ai-stock-news-web/ios/App/CapApp-SPM/.gitignore">
+.DS_Store
+/.build
+/Packages
+/*.xcodeproj
+xcuserdata/
+DerivedData/
+.swiftpm/config/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+</file>
+
+<file path="ai-stock-news-web/ios/App/CapApp-SPM/Package.swift">
+// swift-tools-version: 5.9
+import PackageDescription
+
+// DO NOT MODIFY THIS FILE - managed by Capacitor CLI commands
+let package = Package(
+    name: "CapApp-SPM",
+    platforms: [.iOS(.v15)],
+    products: [
+        .library(
+            name: "CapApp-SPM",
+            targets: ["CapApp-SPM"])
+    ],
+    dependencies: [
+        .package(url: "https://github.com/ionic-team/capacitor-swift-pm.git", exact: "8.0.0")
+    ],
+    targets: [
+        .target(
+            name: "CapApp-SPM",
+            dependencies: [
+                .product(name: "Capacitor", package: "capacitor-swift-pm"),
+                .product(name: "Cordova", package: "capacitor-swift-pm")
+            ]
+        )
+    ]
+)
+</file>
+
+<file path="ai-stock-news-web/ios/App/CapApp-SPM/README.md">
+# CapApp-SPM
+
+This SPM is used to host SPM dependencies for you Capacitor project
+
+Do not modify the contents of it or there may be unintended consequences.
+</file>
+
+<file path="ai-stock-news-web/ios/App/CapApp-SPM/Sources/CapApp-SPM/CapApp-SPM.swift">
+public let isCapacitorApp = true
+</file>
+
+<file path="ai-stock-news-web/ios/debug.xcconfig">
+CAPACITOR_DEBUG = true
+</file>
+
+<file path=".gitignore">
+# --- Security (NEVER UPLOAD THESE) ---
+aws-key.pem
+*.pem
+.env
+backend/.env
+
+# --- System & Heavy Files ---
+venv/
+backend/venv/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+
+# --- Web Project Files ---
+ai-stock-news-web/node_modules/
+ai-stock-news-web/www/
+ai-stock-news-web/dist/
+ai-stock-news-web/.angular/
+</file>
+
+<file path="ai-stock-news-web/.editorconfig">
+# Editor configuration, see https://editorconfig.org
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.ts]
+quote_type = single
+ij_typescript_use_double_quotes = false
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
+</file>
+
+<file path="ai-stock-news-web/.gitignore">
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+# Compiled output
+/dist
+/tmp
+/out-tsc
+/bazel-out
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# Miscellaneous
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+__screenshots__/
+
+# System files
+.DS_Store
+Thumbs.db
+</file>
+
+<file path="ai-stock-news-web/.vscode/extensions.json">
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=827846
+  "recommendations": ["angular.ng-template"]
+}
+</file>
+
+<file path="ai-stock-news-web/.vscode/launch.json">
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "ng serve",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: start",
+      "url": "http://localhost:4200/"
+    },
+    {
+      "name": "ng test",
+      "type": "chrome",
+      "request": "launch",
+      "preLaunchTask": "npm: test",
+      "url": "http://localhost:9876/debug.html"
+    }
+  ]
+}
+</file>
+
+<file path="ai-stock-news-web/.vscode/tasks.json">
+{
+  // For more information, visit: https://go.microsoft.com/fwlink/?LinkId=733558
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "(.*?)"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation complete"
+          }
+        }
+      }
+    },
+    {
+      "type": "npm",
+      "script": "test",
+      "isBackground": true,
+      "problemMatcher": {
+        "owner": "typescript",
+        "pattern": "$tsc",
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": {
+            "regexp": "(.*?)"
+          },
+          "endsPattern": {
+            "regexp": "bundle generation complete"
+          }
+        }
+      }
+    }
+  ]
+}
+</file>
+
+<file path="ai-stock-news-web/android/.gitignore">
+# Using Android gitignore template: https://github.com/github/gitignore/blob/HEAD/Android.gitignore
+
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+#  Uncomment the following line in case you need and you don't have the release build type files in your app
+# release/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Proguard folder generated by Eclipse
+proguard/
+
+# Log Files
+*.log
+
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio captures folder
+captures/
+
+# IntelliJ
+*.iml
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/gradle.xml
+.idea/assetWizardSettings.xml
+.idea/dictionaries
+.idea/libraries
+# Android Studio 3 in .gitignore file.
+.idea/caches
+.idea/modules.xml
+# Comment next line if keeping position of elements in Navigation Editor is relevant for you
+.idea/navEditor.xml
+
+# Keystore files
+# Uncomment the following lines if you do not want to check your keystore files in.
+#*.jks
+#*.keystore
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+.cxx/
+
+# Google Services (e.g. APIs or Firebase)
+# google-services.json
+
+# Freeline
+freeline.py
+freeline/
+freeline_project_description.json
+
+# fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots
+fastlane/test_output
+fastlane/readme.md
+
+# Version control
+vcs.xml
+
+# lint
+lint/intermediates/
+lint/generated/
+lint/outputs/
+lint/tmp/
+# lint/reports/
+
+# Android Profiling
+*.hprof
+
+# Cordova plugins for Capacitor
+capacitor-cordova-android-plugins
+
+# Copied web assets
+app/src/main/assets/public
+
+# Generated Config files
+app/src/main/assets/capacitor.config.json
+app/src/main/assets/capacitor.plugins.json
+app/src/main/res/xml/config.xml
+</file>
+
+<file path="ai-stock-news-web/android/app/.gitignore">
+/build/*
+!/build/.npmkeep
+</file>
+
+<file path="ai-stock-news-web/android/app/build.gradle">
+apply plugin: 'com.android.application'
+
+android {
+    namespace = "com.myapp.ai.stocknews"
+    compileSdk = rootProject.ext.compileSdkVersion
+    defaultConfig {
+        applicationId "com.myapp.ai.stocknews"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        aaptOptions {
+             // Files and dirs to omit from the packaged assets dir, modified to accommodate modern web apps.
+             // Default: https://android.googlesource.com/platform/frameworks/base/+/282e181b58cf72b6ca770dc7ca5f91f135444502/tools/aapt/AaptAssets.cpp#61
+            ignoreAssetsPattern = '!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+repositories {
+    flatDir{
+        dirs '../capacitor-cordova-android-plugins/src/main/libs', 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
+    implementation "androidx.core:core-splashscreen:$coreSplashScreenVersion"
+    implementation project(':capacitor-android')
+    testImplementation "junit:junit:$junitVersion"
+    androidTestImplementation "androidx.test.ext:junit:$androidxJunitVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidxEspressoCoreVersion"
+    implementation project(':capacitor-cordova-android-plugins')
+}
+
+apply from: 'capacitor.build.gradle'
+
+try {
+    def servicesJSON = file('google-services.json')
+    if (servicesJSON.text) {
+        apply plugin: 'com.google.gms.google-services'
+    }
+} catch(Exception e) {
+    logger.info("google-services.json not found, google-services plugin not applied. Push Notifications won't work")
+}
+</file>
+
+<file path="ai-stock-news-web/android/app/capacitor.build.gradle">
+// DO NOT EDIT THIS FILE! IT IS GENERATED EACH TIME "capacitor update" IS RUN
+
+android {
+  compileOptions {
+      sourceCompatibility JavaVersion.VERSION_21
+      targetCompatibility JavaVersion.VERSION_21
+  }
+}
+
+apply from: "../capacitor-cordova-android-plugins/cordova.variables.gradle"
+dependencies {
+
+
+}
+
+
+if (hasProperty('postBuildExtras')) {
+  postBuildExtras()
+}
+</file>
+
+<file path="ai-stock-news-web/android/app/proguard-rules.pro">
+# Add project specific ProGuard rules here.
+# You can control the set of applied configuration files using the
+# proguardFiles setting in build.gradle.
+#
+# For more details, see
+#   http://developer.android.com/guide/developing/tools/proguard.html
+
+# If your project uses WebView with JS, uncomment the following
+# and specify the fully qualified class name to the JavaScript interface
+# class:
+#-keepclassmembers class fqcn.of.javascript.interface.for.webview {
+#   public *;
+#}
+
+# Uncomment this to preserve the line number information for
+# debugging stack traces.
+#-keepattributes SourceFile,LineNumberTable
+
+# If you keep the line number information, uncomment this to
+# hide the original source file name.
+#-renamesourcefileattribute SourceFile
+</file>
+
+<file path="ai-stock-news-web/android/app/src/androidTest/java/com/getcapacitor/myapp/ExampleInstrumentedTest.java">
+package com.getcapacitor.myapp;
+
+import static org.junit.Assert.*;
+
+import android.content.Context;
+import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+/**
+ * Instrumented test, which will execute on an Android device.
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+@RunWith(AndroidJUnit4.class)
+public class ExampleInstrumentedTest {
+
+    @Test
+    public void useAppContext() throws Exception {
+        // Context of the app under test.
+        Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
+
+        assertEquals("com.getcapacitor.app", appContext.getPackageName());
+    }
+}
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/AndroidManifest.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|smallestScreenSize|screenLayout|uiMode|navigation|density"
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBarLaunch"
+            android:launchMode="singleTask"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"></meta-data>
+        </provider>
+    </application>
+
+    <!-- Permissions -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+</manifest>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/java/com/myapp/ai/stocknews/MainActivity.java">
+package com.myapp.ai.stocknews;
+
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {}
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/drawable-v24/ic_launcher_foreground.xml">
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportHeight="108"
+    android:viewportWidth="108">
+    <path
+        android:fillType="evenOdd"
+        android:pathData="M32,64C32,64 38.39,52.99 44.13,50.95C51.37,48.37 70.14,49.57 70.14,49.57L108.26,87.69L108,109.01L75.97,107.97L32,64Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:endX="78.5885"
+                android:endY="90.9159"
+                android:startX="48.7653"
+                android:startY="61.0927"
+                android:type="linear">
+                <item
+                    android:color="#44000000"
+                    android:offset="0.0" />
+                <item
+                    android:color="#00000000"
+                    android:offset="1.0" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <path
+        android:fillColor="#FFFFFF"
+        android:fillType="nonZero"
+        android:pathData="M66.94,46.02L66.94,46.02C72.44,50.07 76,56.61 76,64L32,64C32,56.61 35.56,50.11 40.98,46.06L36.18,41.19C35.45,40.45 35.45,39.3 36.18,38.56C36.91,37.81 38.05,37.81 38.78,38.56L44.25,44.05C47.18,42.57 50.48,41.71 54,41.71C57.48,41.71 60.78,42.57 63.68,44.05L69.11,38.56C69.84,37.81 70.98,37.81 71.71,38.56C72.44,39.3 72.44,40.45 71.71,41.19L66.94,46.02ZM62.94,56.92C64.08,56.92 65,56.01 65,54.88C65,53.76 64.08,52.85 62.94,52.85C61.8,52.85 60.88,53.76 60.88,54.88C60.88,56.01 61.8,56.92 62.94,56.92ZM45.06,56.92C46.2,56.92 47.13,56.01 47.13,54.88C47.13,53.76 46.2,52.85 45.06,52.85C43.92,52.85 43,53.76 43,54.88C43,56.01 43.92,56.92 45.06,56.92Z"
+        android:strokeColor="#00000000"
+        android:strokeWidth="1" />
+</vector>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/drawable/ic_launcher_background.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportHeight="108"
+    android:viewportWidth="108">
+    <path
+        android:fillColor="#26A69A"
+        android:pathData="M0,0h108v108h-108z" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M9,0L9,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,0L19,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,0L29,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,0L39,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,0L49,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,0L59,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,0L69,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,0L79,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M89,0L89,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M99,0L99,108"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,9L108,9"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,19L108,19"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,29L108,29"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,39L108,39"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,49L108,49"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,59L108,59"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,69L108,69"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,79L108,79"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,89L108,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M0,99L108,99"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,29L89,29"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,39L89,39"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,49L89,49"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,59L89,59"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,69L89,69"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M19,79L89,79"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M29,19L29,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M39,19L39,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M49,19L49,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M59,19L59,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M69,19L69,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+    <path
+        android:fillColor="#00000000"
+        android:pathData="M79,19L79,89"
+        android:strokeColor="#33FFFFFF"
+        android:strokeWidth="0.8" />
+</vector>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/layout/activity_main.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/ic_launcher_background"/>
+    <foreground android:drawable="@mipmap/ic_launcher_foreground"/>
+</adaptive-icon>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/values/ic_launcher_background.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FFFFFF</color>
+</resources>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/values/strings.xml">
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">AI STOCKS</string>
+    <string name="title_activity_main">AI STOCKS</string>
+    <string name="package_name">com.myapp.ai.stocknews</string>
+    <string name="custom_url_scheme">com.myapp.ai.stocknews</string>
+</resources>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/values/styles.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:background">@null</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBarLaunch" parent="Theme.SplashScreen">
+        <item name="android:background">@drawable/splash</item>
+    </style>
+</resources>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/main/res/xml/file_paths.xml">
+<?xml version="1.0" encoding="utf-8"?>
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <external-path name="my_images" path="." />
+    <cache-path name="my_cache_images" path="." />
+</paths>
+</file>
+
+<file path="ai-stock-news-web/android/app/src/test/java/com/getcapacitor/myapp/ExampleUnitTest.java">
+package com.getcapacitor.myapp;
+
+import static org.junit.Assert.*;
+
+import org.junit.Test;
+
+/**
+ * Example local unit test, which will execute on the development machine (host).
+ *
+ * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ */
+public class ExampleUnitTest {
+
+    @Test
+    public void addition_isCorrect() throws Exception {
+        assertEquals(4, 2 + 2);
+    }
+}
+</file>
+
+<file path="ai-stock-news-web/android/build.gradle">
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.13.0'
+        classpath 'com.google.gms:google-services:4.4.4'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+apply from: "variables.gradle"
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+</file>
+
+<file path="ai-stock-news-web/android/capacitor.settings.gradle">
+// DO NOT EDIT THIS FILE! IT IS GENERATED EACH TIME "capacitor update" IS RUN
+include ':capacitor-android'
+project(':capacitor-android').projectDir = new File('../node_modules/@capacitor/android/capacitor')
+</file>
+
+<file path="ai-stock-news-web/android/gradle.properties">
+# Project-wide Gradle settings.
+
+# IDE (e.g. Android Studio) users:
+# Gradle settings configured through the IDE *will override*
+# any settings specified in this file.
+
+# For more details on how to configure your build environment visit
+# http://www.gradle.org/docs/current/userguide/build_environment.html
+
+# Specifies the JVM arguments used for the daemon process.
+# The setting is particularly useful for tweaking memory settings.
+org.gradle.jvmargs=-Xmx1536m
+
+# When configured, Gradle will run in incubating parallel mode.
+# This option should only be used with decoupled projects. More details, visit
+# http://www.gradle.org/docs/current/userguide/multi_project_builds.html#sec:decoupled_projects
+# org.gradle.parallel=true
+
+# AndroidX package structure to make it clearer which packages are bundled with the
+# Android operating system, and which are packaged with your app's APK
+# https://developer.android.com/topic/libraries/support-library/androidx-rn
+android.useAndroidX=true
+</file>
+
+<file path="ai-stock-news-web/android/gradle/wrapper/gradle-wrapper.properties">
+distributionBase=GRADLE_USER_HOME
+distributionPath=wrapper/dists
+distributionUrl=https\://services.gradle.org/distributions/gradle-8.14.3-all.zip
+networkTimeout=10000
+validateDistributionUrl=true
+zipStoreBase=GRADLE_USER_HOME
+zipStorePath=wrapper/dists
+</file>
+
+<file path="ai-stock-news-web/android/gradlew">
+#!/bin/sh
+
+#
+# Copyright © 2015-2021 the original authors.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+##############################################################################
+#
+#   Gradle start up script for POSIX generated by Gradle.
+#
+#   Important for running:
+#
+#   (1) You need a POSIX-compliant shell to run this script. If your /bin/sh is
+#       noncompliant, but you have some other compliant shell such as ksh or
+#       bash, then to run this script, type that shell name before the whole
+#       command line, like:
+#
+#           ksh Gradle
+#
+#       Busybox and similar reduced shells will NOT work, because this script
+#       requires all of these POSIX shell features:
+#         * functions;
+#         * expansions «$var», «${var}», «${var:-default}», «${var+SET}»,
+#           «${var#prefix}», «${var%suffix}», and «$( cmd )»;
+#         * compound commands having a testable exit status, especially «case»;
+#         * various built-in commands including «command», «set», and «ulimit».
+#
+#   Important for patching:
+#
+#   (2) This script targets any POSIX shell, so it avoids extensions provided
+#       by Bash, Ksh, etc; in particular arrays are avoided.
+#
+#       The "traditional" practice of packing multiple parameters into a
+#       space-separated string is a well documented source of bugs and security
+#       problems, so this is (mostly) avoided, by progressively accumulating
+#       options in "$@", and eventually passing that to Java.
+#
+#       Where the inherited environment variables (DEFAULT_JVM_OPTS, JAVA_OPTS,
+#       and GRADLE_OPTS) rely on word-splitting, this is performed explicitly;
+#       see the in-line comments for details.
+#
+#       There are tweaks for specific operating systems such as AIX, CygWin,
+#       Darwin, MinGW, and NonStop.
+#
+#   (3) This script is generated from the Groovy template
+#       https://github.com/gradle/gradle/blob/HEAD/platforms/jvm/plugins-application/src/main/resources/org/gradle/api/internal/plugins/unixStartScript.txt
+#       within the Gradle project.
+#
+#       You can find Gradle at https://github.com/gradle/gradle/.
+#
+##############################################################################
+
+# Attempt to set APP_HOME
+
+# Resolve links: $0 may be a link
+app_path=$0
+
+# Need this for daisy-chained symlinks.
+while
+    APP_HOME=${app_path%"${app_path##*/}"}  # leaves a trailing /; empty if no leading path
+    [ -h "$app_path" ]
+do
+    ls=$( ls -ld "$app_path" )
+    link=${ls#*' -> '}
+    case $link in             #(
+      /*)   app_path=$link ;; #(
+      *)    app_path=$APP_HOME$link ;;
+    esac
+done
+
+# This is normally unused
+# shellcheck disable=SC2034
+APP_BASE_NAME=${0##*/}
+# Discard cd standard output in case $CDPATH is set (https://github.com/gradle/gradle/issues/25036)
+APP_HOME=$( cd -P "${APP_HOME:-./}" > /dev/null && printf '%s\n' "$PWD" ) || exit
+
+# Use the maximum available, or set MAX_FD != -1 to use that value.
+MAX_FD=maximum
+
+warn () {
+    echo "$*"
+} >&2
+
+die () {
+    echo
+    echo "$*"
+    echo
+    exit 1
+} >&2
+
+# OS specific support (must be 'true' or 'false').
+cygwin=false
+msys=false
+darwin=false
+nonstop=false
+case "$( uname )" in                #(
+  CYGWIN* )         cygwin=true  ;; #(
+  Darwin* )         darwin=true  ;; #(
+  MSYS* | MINGW* )  msys=true    ;; #(
+  NONSTOP* )        nonstop=true ;;
+esac
+
+CLASSPATH="\\\"\\\""
+
+
+# Determine the Java command to use to start the JVM.
+if [ -n "$JAVA_HOME" ] ; then
+    if [ -x "$JAVA_HOME/jre/sh/java" ] ; then
+        # IBM's JDK on AIX uses strange locations for the executables
+        JAVACMD=$JAVA_HOME/jre/sh/java
+    else
+        JAVACMD=$JAVA_HOME/bin/java
+    fi
+    if [ ! -x "$JAVACMD" ] ; then
+        die "ERROR: JAVA_HOME is set to an invalid directory: $JAVA_HOME
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+else
+    JAVACMD=java
+    if ! command -v java >/dev/null 2>&1
+    then
+        die "ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH.
+
+Please set the JAVA_HOME variable in your environment to match the
+location of your Java installation."
+    fi
+fi
+
+# Increase the maximum file descriptors if we can.
+if ! "$cygwin" && ! "$darwin" && ! "$nonstop" ; then
+    case $MAX_FD in #(
+      max*)
+        # In POSIX sh, ulimit -H is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC2039,SC3045
+        MAX_FD=$( ulimit -H -n ) ||
+            warn "Could not query maximum file descriptor limit"
+    esac
+    case $MAX_FD in  #(
+      '' | soft) :;; #(
+      *)
+        # In POSIX sh, ulimit -n is undefined. That's why the result is checked to see if it worked.
+        # shellcheck disable=SC2039,SC3045
+        ulimit -n "$MAX_FD" ||
+            warn "Could not set maximum file descriptor limit to $MAX_FD"
+    esac
+fi
+
+# Collect all arguments for the java command, stacking in reverse order:
+#   * args from the command line
+#   * the main class name
+#   * -classpath
+#   * -D...appname settings
+#   * --module-path (only if needed)
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and GRADLE_OPTS environment variables.
+
+# For Cygwin or MSYS, switch paths to Windows format before running java
+if "$cygwin" || "$msys" ; then
+    APP_HOME=$( cygpath --path --mixed "$APP_HOME" )
+    CLASSPATH=$( cygpath --path --mixed "$CLASSPATH" )
+
+    JAVACMD=$( cygpath --unix "$JAVACMD" )
+
+    # Now convert the arguments - kludge to limit ourselves to /bin/sh
+    for arg do
+        if
+            case $arg in                                #(
+              -*)   false ;;                            # don't mess with options #(
+              /?*)  t=${arg#/} t=/${t%%/*}              # looks like a POSIX filepath
+                    [ -e "$t" ] ;;                      #(
+              *)    false ;;
+            esac
+        then
+            arg=$( cygpath --path --ignore --mixed "$arg" )
+        fi
+        # Roll the args list around exactly as many times as the number of
+        # args, so each arg winds up back in the position where it started, but
+        # possibly modified.
+        #
+        # NB: a `for` loop captures its iteration list before it begins, so
+        # changing the positional parameters here affects neither the number of
+        # iterations, nor the values presented in `arg`.
+        shift                   # remove old arg
+        set -- "$@" "$arg"      # push replacement arg
+    done
+fi
+
+
+# Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+
+# Collect all arguments for the java command:
+#   * DEFAULT_JVM_OPTS, JAVA_OPTS, and optsEnvironmentVar are not allowed to contain shell fragments,
+#     and any embedded shellness will be escaped.
+#   * For example: A user cannot expect ${Hostname} to be expanded, as it is an environment variable and will be
+#     treated as '${Hostname}' itself on the command line.
+
+set -- \
+        "-Dorg.gradle.appname=$APP_BASE_NAME" \
+        -classpath "$CLASSPATH" \
+        -jar "$APP_HOME/gradle/wrapper/gradle-wrapper.jar" \
+        "$@"
+
+# Stop when "xargs" is not available.
+if ! command -v xargs >/dev/null 2>&1
+then
+    die "xargs is not available"
+fi
+
+# Use "xargs" to parse quoted args.
+#
+# With -n1 it outputs one arg per line, with the quotes and backslashes removed.
+#
+# In Bash we could simply go:
+#
+#   readarray ARGS < <( xargs -n1 <<<"$var" ) &&
+#   set -- "${ARGS[@]}" "$@"
+#
+# but POSIX shell has neither arrays nor command substitution, so instead we
+# post-process each arg (as a line of input to sed) to backslash-escape any
+# character that might be a shell metacharacter, then use eval to reverse
+# that process (while maintaining the separation between arguments), and wrap
+# the whole thing up as a single "set" statement.
+#
+# This will of course break if any of these variables contains a newline or
+# an unmatched quote.
+#
+
+eval "set -- $(
+        printf '%s\n' "$DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS" |
+        xargs -n1 |
+        sed ' s~[^-[:alnum:]+,./:=@_]~\\&~g; ' |
+        tr '\n' ' '
+    )" '"$@"'
+
+exec "$JAVACMD" "$@"
+</file>
+
+<file path="ai-stock-news-web/android/gradlew.bat">
+@rem
+@rem Copyright 2015 the original author or authors.
+@rem
+@rem Licensed under the Apache License, Version 2.0 (the "License");
+@rem you may not use this file except in compliance with the License.
+@rem You may obtain a copy of the License at
+@rem
+@rem      https://www.apache.org/licenses/LICENSE-2.0
+@rem
+@rem Unless required by applicable law or agreed to in writing, software
+@rem distributed under the License is distributed on an "AS IS" BASIS,
+@rem WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+@rem See the License for the specific language governing permissions and
+@rem limitations under the License.
+@rem
+@rem SPDX-License-Identifier: Apache-2.0
+@rem
+
+@if "%DEBUG%"=="" @echo off
+@rem ##########################################################################
+@rem
+@rem  Gradle startup script for Windows
+@rem
+@rem ##########################################################################
+
+@rem Set local scope for the variables with windows NT shell
+if "%OS%"=="Windows_NT" setlocal
+
+set DIRNAME=%~dp0
+if "%DIRNAME%"=="" set DIRNAME=.
+@rem This is normally unused
+set APP_BASE_NAME=%~n0
+set APP_HOME=%DIRNAME%
+
+@rem Resolve any "." and ".." in APP_HOME to make it shorter.
+for %%i in ("%APP_HOME%") do set APP_HOME=%%~fi
+
+@rem Add default JVM options here. You can also use JAVA_OPTS and GRADLE_OPTS to pass JVM options to this script.
+set DEFAULT_JVM_OPTS="-Xmx64m" "-Xms64m"
+
+@rem Find java.exe
+if defined JAVA_HOME goto findJavaFromJavaHome
+
+set JAVA_EXE=java.exe
+%JAVA_EXE% -version >NUL 2>&1
+if %ERRORLEVEL% equ 0 goto execute
+
+echo. 1>&2
+echo ERROR: JAVA_HOME is not set and no 'java' command could be found in your PATH. 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+
+goto fail
+
+:findJavaFromJavaHome
+set JAVA_HOME=%JAVA_HOME:"=%
+set JAVA_EXE=%JAVA_HOME%/bin/java.exe
+
+if exist "%JAVA_EXE%" goto execute
+
+echo. 1>&2
+echo ERROR: JAVA_HOME is set to an invalid directory: %JAVA_HOME% 1>&2
+echo. 1>&2
+echo Please set the JAVA_HOME variable in your environment to match the 1>&2
+echo location of your Java installation. 1>&2
+
+goto fail
+
+:execute
+@rem Setup the command line
+
+set CLASSPATH=
+
+
+@rem Execute Gradle
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %GRADLE_OPTS% "-Dorg.gradle.appname=%APP_BASE_NAME%" -classpath "%CLASSPATH%" -jar "%APP_HOME%\gradle\wrapper\gradle-wrapper.jar" %*
+
+:end
+@rem End local scope for the variables with windows NT shell
+if %ERRORLEVEL% equ 0 goto mainEnd
+
+:fail
+rem Set variable GRADLE_EXIT_CONSOLE if you need the _script_ return code instead of
+rem the _cmd.exe /c_ return code!
+set EXIT_CODE=%ERRORLEVEL%
+if %EXIT_CODE% equ 0 set EXIT_CODE=1
+if not ""=="%GRADLE_EXIT_CONSOLE%" exit %EXIT_CODE%
+exit /b %EXIT_CODE%
+
+:mainEnd
+if "%OS%"=="Windows_NT" endlocal
+
+:omega
+</file>
+
+<file path="ai-stock-news-web/android/settings.gradle">
+include ':app'
+include ':capacitor-cordova-android-plugins'
+project(':capacitor-cordova-android-plugins').projectDir = new File('./capacitor-cordova-android-plugins/')
+
+apply from: 'capacitor.settings.gradle'
+</file>
+
+<file path="ai-stock-news-web/android/variables.gradle">
+ext {
+    minSdkVersion = 24
+    compileSdkVersion = 36
+    targetSdkVersion = 36
+    androidxActivityVersion = '1.11.0'
+    androidxAppCompatVersion = '1.7.1'
+    androidxCoordinatorLayoutVersion = '1.3.0'
+    androidxCoreVersion = '1.17.0'
+    androidxFragmentVersion = '1.8.9'
+    coreSplashScreenVersion = '1.2.0'
+    androidxWebkitVersion = '1.14.0'
+    junitVersion = '4.13.2'
+    androidxJunitVersion = '1.3.0'
+    androidxEspressoCoreVersion = '3.7.0'
+    cordovaAndroidVersion = '14.0.1'
+}
+</file>
+
+<file path="ai-stock-news-web/angular.json">
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "packageManager": "npm",
+    "analytics": false
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "ai-stock-news-web": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+            ],
+            "styles": [
+              "src/styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "4kB",
+                  "maximumError": "8kB"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "ai-stock-news-web:build:production"
+            },
+            "development": {
+              "buildTarget": "ai-stock-news-web:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test"
+        }
+      }
+    }
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/capacitor.config.ts">
+import { CapacitorConfig } from '@capacitor/core';
+
+const config: CapacitorConfig = {
+  appId: 'com.myapp.ai.stocknews',
+  appName: 'AI STOCKS',
+  webDir: 'dist/ai-stock-news-web/browser',
+
+  plugins: {
+    CapacitorHttp: {
+      enabled: true
+    }
+  }
+};
+
+export default config;
+</file>
+
+<file path="ai-stock-news-web/ionic.config.json">
+{
+  "name": "AiStockNews",
+  "integrations": {},
+  "type": "angular"
+}
+</file>
+
+<file path="ai-stock-news-web/package.json">
+{
+  "name": "ai-stock-news-web",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "ng serve",
+    "build": "ng build",
+    "preview": "ng serve --configuration=production"
+  },
+  "dependencies": {
+    "@angular/build": "^21.0.0",
+    "@angular/cli": "^21.0.0",
+    "@angular/common": "^21.0.0",
+    "@angular/compiler": "^21.0.0",
+    "@angular/compiler-cli": "^21.0.0",
+    "@angular/core": "^21.0.0",
+    "@angular/forms": "^21.0.5",
+    "@angular/platform-browser": "^21.0.0",
+    "@angular/router": "^21.0.5",
+    "@capacitor/android": "^8.0.0",
+    "@capacitor/cli": "^8.0.0",
+    "@capacitor/core": "^8.0.0",
+    "@capacitor/ios": "^8.0.0",
+    "rxjs": "^7.8.2",
+    "tailwindcss": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "typescript": "^5.9.3",
+    "vite": "^6.2.0"
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/README.md">
+# AiStockNewsWeb
+
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.2.
+
+## Development server
+
+To start a local development server, run:
+
+```bash
+ng serve
+```
+
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+
+## Code scaffolding
+
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
+```
+
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+
+```bash
+ng generate --help
+```
+
+## Building
+
+To build the project run:
+
+```bash
+ng build
+```
+
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+
+## Running unit tests
+
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+</file>
+
+<file path="ai-stock-news-web/src/app/app.component.css">
+/* --- Global Page Style --- */
+body {
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f7fa;
+  color: #222;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #1a3e72;
+}
+
+/* --- Search Area --- */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.search-box input {
+  padding: 10px 12px;
+  width: 200px;
+  border-radius: 6px;
+  border: 1px solid #b6c2d9;
+  font-size: 16px;
+  outline: none;
+}
+
+.search-box button {
+  padding: 10px 18px;
+  background: #1a73e8;
+  border: none;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.2s;
+}
+
+.search-box button:hover {
+  background: #155bbd;
+}
+
+.search-box button:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+/* --- Loading & Error --- */
+.loading {
+  text-align: center;
+  font-size: 18px;
+  color: #777;
+  margin-top: 20px;
+}
+
+.error {
+  text-align: center;
+  color: #d9534f;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+/* --- Price Section (New) --- */
+.price-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.price-header h2 {
+  font-size: 20px;
+  color: #555;
+  margin: 0;
+}
+
+.price-header h1 {
+  font-size: 48px;
+  margin: 5px 0;
+  color: #222;
+  font-weight: 800;
+}
+
+/* --- Sentiment Summary Box --- */
+.sentiment-summary {
+  background: white;
+  width: 400px;
+  max-width: 95%;
+  margin: 0 auto 30px auto; /* Centered */
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.sentiment-summary h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+/* Stats Row (Grid for Score, Pos, Neg) */
+.stats-row {
+  display: flex;
+  justify-content: space-around; /* Spreads items evenly */
+  background-color: #f8f9fa;
+  padding: 15px 10px;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.stats-row div {
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.stats-row strong {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 4px;
+  color: #333;
+}
+
+/* --- Sentiment Colors (Text) --- */
+.buy { color: #0d8c00; font-weight: bold; }
+.sell { color: #d0021b; font-weight: bold; }
+.neutral { color: #ff9800; font-weight: bold; }
+
+/* --- News List --- */
+.news-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.news-list h3 {
+  margin-left: 5px;
+  color: #444;
+}
+
+.news-item {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.05);
+  border-left: 6px solid #1a73e8;
+}
+
+.news-item h4 {
+  margin: 0 0 10px 0; /* Updated from h3 to h4 to match HTML */
+  font-size: 18px;
+  line-height: 1.4;
+  color: #333;
+}
+
+/* News Meta (Badge + Date Row) */
+.news-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.date {
+  font-size: 12px;
+  color: #999;
+}
+
+/* --- Sentiment Badge (Backgrounds) --- */
+.sentiment {
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.pos { background: #0d8c00; }
+.neg { background: #d0021b; }
+.neu { background: #ff9800; }
+</file>
+
+<file path="ai-stock-news-web/src/app/app.component.html">
+<h1>AI Stock News & Sentiment</h1>
+
+<!-- 1. SEARCH BOX -->
+<div class="search-box">
+  <input 
+    [(ngModel)]="symbol" 
+    placeholder="Enter Symbol (e.g. AAPL)" 
+    (keyup.enter)="search()" 
+  />
+  <button (click)="search()" [disabled]="loading">
+    {{ loading ? '...' : 'Search' }}
+  </button>
+</div>
+
+<!-- 2. LOADING & ERROR MESSAGES -->
+<div *ngIf="loading" class="loading">
+  Running AI Analysis...
+</div>
+
+<div *ngIf="error" class="error">
+  {{ error }}
+</div>
+
+<!-- 3. MAIN RESULTS (Only shows if stockData exists) -->
+<div *ngIf="stockData" class="results-container">
+
+  <!-- A. PRICE SECTION -->
+  <div class="price-header">
+    <h2>{{ stockData.symbol }}</h2>
+    <h1>${{ stockData.price }}</h1>
+  </div>
+
+  <!-- B. SENTIMENT DASHBOARD -->
+  <div class="sentiment-summary">
+    <h3>
+      Signal: 
+      <span [ngClass]="{
+          'buy': stockData.sentiment.signal === 'BUY',
+          'sell': stockData.sentiment.signal === 'SELL',
+          'neutral': stockData.sentiment.signal === 'NEUTRAL'
+        }">
+        {{ stockData.sentiment.signal }}
+      </span>
+    </h3>
+
+    <!-- Stats Grid -->
+    <div class="stats-row">
+      <div>
+        <strong>{{ stockData.sentiment.buy_score }}</strong><br>Score
+      </div>
+      <div>
+        <strong style="color: green">{{ stockData.sentiment.positive }}</strong><br>Pos
+      </div>
+      <div>
+        <strong style="color: red">{{ stockData.sentiment.negative }}</strong><br>Neg
+      </div>
+    </div>
+  </div>
+
+  <!-- C. NEWS LIST -->
+  <div class="news-list">
+    <h3>Latest Articles</h3>
+    
+    <div *ngFor="let item of stockData.news" class="news-item">
+      <h4>{{ item.headline }}</h4>
+      
+      <div class="news-meta">
+        <!-- Sentiment Badge -->
+        <span class="sentiment" [ngClass]="{
+            'pos': item.sentiment === 'positive',
+            'neg': item.sentiment === 'negative',
+            'neu': item.sentiment === 'neutral'
+          }">
+          {{ item.sentiment | uppercase }}
+        </span>
+        
+        <!-- Date -->
+        <span class="date">
+          {{ item.datetime * 1000 | date:'MMM d' }}
+        </span>
+      </div>
+    </div>
+  </div>
+
+</div>
+</file>
+
+<file path="ai-stock-news-web/src/app/app.component.ts">
+import { Component, ChangeDetectionStrategy, ChangeDetectorRef } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { NewsService } from './services/news.service';
+// Import the strong type we created
+import { StockNewsResponse } from './models/stock-news.model';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  imports: [CommonModule, FormsModule],
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+
+  symbol = '';
+  loading = false;
+  error = '';
+  
+  // instead of separate variables, we hold the whole response here
+  stockData: StockNewsResponse | null = null;
+
+  constructor(
+    private newsService: NewsService,
+    private cdr: ChangeDetectorRef
+  ) {}
+
+  search() {
+    const trimmedSymbol = this.symbol.trim().toUpperCase();
+
+    if (!trimmedSymbol) {
+      this.error = 'Please enter a stock symbol.';
+      return;
+    }
+
+    // Reset State
+    this.loading = true;
+    this.error = '';
+    this.stockData = null; 
+    
+    // Trigger UI update manually because of OnPush
+    this.cdr.detectChanges(); 
+
+    this.newsService.getNews(trimmedSymbol).subscribe({
+      next: (data: StockNewsResponse) => {
+        this.stockData = data;
+        this.loading = false;
+        
+        console.log('API RESPONSE:', this.stockData);
+        
+        // Update UI
+        this.cdr.detectChanges();
+      },
+      error: (err) => {
+        console.error('API ERROR:', err);
+        this.error = 'Failed to load news. Check if Backend is running.';
+        this.loading = false;
+        this.cdr.detectChanges();
+      }
+    });
+  }
+
+  // Helper function for HTML to color the badges
+  getSentimentColor(sentiment: string): string {
+    switch (sentiment) {
+      case 'positive': return 'success'; // Green
+      case 'negative': return 'danger';  // Red
+      case 'BUY': return 'success';
+      case 'SELL': return 'danger';
+      default: return 'medium';          // Grey
+    }
+  }
+}
+</file>
+
+<file path="ai-stock-news-web/src/app/app.config.ts">
+import { ApplicationConfig, provideBrowserGlobalErrorListeners } from '@angular/core';
+import { provideRouter } from '@angular/router';
+
+import { routes } from './app.routes';
+
+export const appConfig: ApplicationConfig = {
+  providers: [
+    provideBrowserGlobalErrorListeners(),
+    provideRouter(routes)
+  ]
+};
+</file>
+
+<file path="ai-stock-news-web/src/app/app.routes.ts">
+import { Routes } from '@angular/router';
+
+export const routes: Routes = [];
+</file>
+
+<file path="ai-stock-news-web/src/app/app.spec.ts">
+import { TestBed } from '@angular/core/testing';
+import { App } from './app';
+
+describe('App', () => {
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [App],
+    }).compileComponents();
+  });
+
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(App);
+    const app = fixture.componentInstance;
+    expect(app).toBeTruthy();
+  });
+
+  it('should render title', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    const compiled = fixture.nativeElement as HTMLElement;
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, ai-stock-news-web');
+  });
+});
+</file>
+
+<file path="ai-stock-news-web/src/app/models/stock-news.model.ts">
+export interface SentimentSummary {
+  positive: number;
+  negative: number;
+  neutral: number;
+  buy_score: number;
+  // We change 'string' to specific values for better autocomplete
+  signal: 'BUY' | 'SELL' | 'NEUTRAL'; 
+}
+
+export interface NewsItem {
+  category: string;
+  datetime: number;
+  headline: string;
+  id: number;
+  image: string;
+  related: string;
+  source: string;
+  summary: string;
+  url: string;
+  // This matches the specific sentiment strings from Python
+  sentiment: 'positive' | 'negative' | 'neutral';
+}
+
+export interface StockNewsResponse {
+  symbol: string;
+  price: number;
+  alert: boolean; // <--- ADDED THIS (matches backend)
+  sentiment: SentimentSummary;
+  news: NewsItem[];
+}
+</file>
+
+<file path="ai-stock-news-web/src/environments/environment.prod.ts">
+export const environment = {
+  production: true,
+  apiUrl: 'https://ai-stock-news-backend.onrender.com'
+};
+</file>
+
+<file path="ai-stock-news-web/src/environments/environment.ts">
+export const environment = {
+  production: false,
+  apiUrl: 'http://127.0.0.1:8000'
+};
+</file>
+
+<file path="ai-stock-news-web/src/index.html">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>AiStockNewsWeb</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root></app-root>
+</body>
+</html>
+</file>
+
+<file path="ai-stock-news-web/src/main.ts">
+import { bootstrapApplication } from '@angular/platform-browser';
+import { AppComponent } from './app/app.component';
+
+bootstrapApplication(AppComponent)
+  .catch(err => console.error(err));
+</file>
+
+<file path="ai-stock-news-web/src/styles.css">
+/* You can add global styles to this file, and also import other style files */
+</file>
+
+<file path="ai-stock-news-web/tsconfig.app.json">
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app",
+    "types": [],
+    "baseUrl": "./",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "src/**/*.spec.ts"
+  ]
+}
+</file>
+
+<file path="ai-stock-news-web/tsconfig.json">
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "ES2022",
+    "module": "preserve"
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  },
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.spec.json"
+    }
+  ]
+}
+</file>
+
+<file path="ai-stock-news-web/tsconfig.spec.json">
+/* To learn more about Typescript configuration file: https://www.typescriptlang.org/docs/handbook/tsconfig-json.html. */
+/* To learn more about Angular compiler options: https://angular.dev/reference/configs/angular-compiler-options. */
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/spec",
+    "types": [
+      "vitest/globals"
+    ]
+  },
+  "include": [
+    "src/**/*.d.ts",
+    "src/**/*.spec.ts"
+  ]
+}
+</file>
+
+<file path="runtime.txt">
+python-3.11.9
+</file>
+
+<file path="ai-stock-news-web/src/app/services/news.service.ts">
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { StockNewsResponse } from '../models/stock-news.model';
+import { environment } from 'src/environments/environment';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class NewsService {
+
+  // OPTION A: Use this for Local Development (Computer)
+   //private API_URL = 'http://127.0.0.1:8000'; 
+  
+  // OPTION B: Use this for Android Emulator
+  // private API_URL = 'http://10.0.2.2:8000';
+
+  // OPTION C: Your AWS / Cloud IP (Use this only if deployed)
+  //private API_URL = 'http://3.138.191.140:8000'; 
+  private API_URL = environment.apiUrl;
+
+  constructor(private http: HttpClient) {}
+
+  getNews(symbol: string): Observable<StockNewsResponse> {
+    // We remove the hardcoded '/news/' from API_URL and add it here
+    // to keep the base URL clean.
+    return this.http.get<StockNewsResponse>(`${this.API_URL}/news/${symbol}`);
+  }
+}
+</file>
+
+<file path="backend/main.py">
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+import os
+import requests
+from openai import OpenAI
+from datetime import datetime, timedelta
+import json
+
+# -------------------------------------------------
+# 1. SETUP
+# -------------------------------------------------
+
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY")
+
+if not OPENAI_API_KEY or not FINNHUB_API_KEY:
+    print("⚠️ WARNING: API keys are missing")
+
+client = OpenAI()
+
+
+app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],   # OK for now (can restrict later)
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+@app.get("/")
+def home():
+    return {"message": "AI Stock News API is running!"}
+
+# -------------------------------------------------
+# 2. AI ANALYSIS (BATCHED)
+# -------------------------------------------------
+
+def analyze_batch_sentiment(headlines: list) -> list:
+    if not headlines:
+        return []
+
+    prompt = (
+        "Analyze the sentiment of the following financial headlines. "
+        "Return a JSON object with a single key 'sentiments' containing a list of strings. "
+        "The strings must be exactly: 'positive', 'negative', or 'neutral'. "
+        "The list order must match the headlines exactly.\n\n"
+        f"Headlines: {json.dumps(headlines)}"
+    )
+
+    try:
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[
+                {"role": "system", "content": "You are a financial analyst helper. Output valid JSON only."},
+                {"role": "user", "content": prompt}
+            ],
+            response_format={"type": "json_object"}
+        )
+
+        content = json.loads(response.choices[0].message.content)
+        sentiments = content.get("sentiments", [])
+
+        if len(sentiments) != len(headlines):
+            return ["neutral"] * len(headlines)
+
+        return sentiments
+
+    except Exception as e:
+        print(f"AI Error: {e}")
+        return ["neutral"] * len(headlines)
+
+# -------------------------------------------------
+# 3. MAIN ENDPOINT
+# -------------------------------------------------
+
+@app.get("/news/{symbol}")
+def get_stock_news(symbol: str):
+    symbol = symbol.upper()
+
+    # --- A. GET PRICE ---
+    try:
+        quote_url = (
+            f"https://finnhub.io/api/v1/quote"
+            f"?symbol={symbol}&token={FINNHUB_API_KEY}"
+        )
+        quote_res = requests.get(quote_url)
+        current_price = quote_res.json().get("c", 0)
+    except:
+        current_price = 0
+
+    # --- B. GET NEWS (Last 7 Days) ---
+    today = datetime.now().date()
+    from_date = (today - timedelta(days=7)).strftime("%Y-%m-%d")
+
+    try:
+        news_url = (
+            f"https://finnhub.io/api/v1/company-news"
+            f"?symbol={symbol}&from={from_date}&to={today}"
+            f"&token={FINNHUB_API_KEY}"
+        )
+        articles = requests.get(news_url).json()[:7]
+    except:
+        articles = []
+
+    # --- C. AI SENTIMENT (ONE CALL) ---
+    headlines = [a.get("headline", "") for a in articles]
+    sentiments = analyze_batch_sentiment(headlines)
+
+    positive = negative = neutral = 0
+
+    for i, article in enumerate(articles):
+        s = sentiments[i]
+        article["sentiment"] = s
+
+        if s == "positive":
+            positive += 1
+        elif s == "negative":
+            negative += 1
+        else:
+            neutral += 1
+
+    score = 50 + (positive * 10) - (negative * 10)
+    score = max(0, min(100, score))
+
+    if score >= 60:
+        signal = "BUY"
+    elif score <= 40:
+        signal = "SELL"
+    else:
+        signal = "NEUTRAL"
+
+    return {
+        "symbol": symbol,
+        "price": current_price,
+        "alert": signal != "NEUTRAL",
+        "sentiment": {
+            "positive": positive,
+            "negative": negative,
+            "neutral": neutral,
+            "buy_score": score,
+            "signal": signal
+        },
+        "news": articles
+    }
+
+# -------------------------------------------------
+# 4. ENTRY POINT (RENDER / LOCAL)
+# -------------------------------------------------
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(
+        "main:app",
+        host="0.0.0.0",
+        port=int(os.environ.get("PORT", 8000))
+    )
+</file>
+
+<file path="backend/requirements.txt">
+fastapi==0.110.0
+uvicorn==0.29.0
+requests==2.31.0
+openai==1.58.1
+pydantic==2.6.4
+typing-extensions>=4.11.0
+</file>
+
+</files>
