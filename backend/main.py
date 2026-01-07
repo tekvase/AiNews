@@ -1,4 +1,7 @@
-from fastapi import FastAPI
+from dotenv import load_dotenv
+load_dotenv()
+
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 import os
 import requests
@@ -6,7 +9,9 @@ import json
 from datetime import datetime, timedelta
 
 from openai import OpenAI
-from dotenv import load_dotenv
+
+# 🔐 Security
+from security import get_current_user
 
 # 🔹 DATABASE
 from database import engine
@@ -16,14 +21,12 @@ from models import Base
 from auth import router as auth_router
 from trades import router as trades_router
 
-# 🔹 DAY 4: PRICE TRACKER
+# 🔹 PRICE TRACKER
 from price_tracker import check_targets
 
 # -------------------------------------------------
-# 1. ENV SETUP
+# ENV SETUP
 # -------------------------------------------------
-
-load_dotenv()
 
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY")
@@ -31,10 +34,10 @@ FINNHUB_API_KEY = os.getenv("FINNHUB_API_KEY")
 if not OPENAI_API_KEY or not FINNHUB_API_KEY:
     print("⚠️ WARNING: API keys are missing")
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+client = OpenAI(api_key=OPENAI_API_KEY) if OPENAI_API_KEY else None
 
 # -------------------------------------------------
-# 2. APP SETUP
+# APP SETUP
 # -------------------------------------------------
 
 app = FastAPI(title="AI Stock News API")
@@ -47,20 +50,20 @@ app.add_middleware(
 )
 
 # -------------------------------------------------
-# 3. DATABASE INIT
+# DATABASE INIT
 # -------------------------------------------------
 
 Base.metadata.create_all(bind=engine)
 
 # -------------------------------------------------
-# 4. ROUTERS
+# ROUTERS
 # -------------------------------------------------
 
 app.include_router(auth_router)
-app.include_router(trades_router, prefix="/trades")
+app.include_router(trades_router)
 
 # -------------------------------------------------
-# 5. HEALTH CHECK
+# HEALTH CHECK
 # -------------------------------------------------
 
 @app.get("/")
@@ -68,42 +71,31 @@ def home():
     return {"message": "AI Stock News API is running!"}
 
 # -------------------------------------------------
-# 6. AI ANALYSIS (BATCHED & SAFE)
+# AI SENTIMENT ANALYSIS
 # -------------------------------------------------
 
 def analyze_batch_sentiment(headlines: list) -> list:
-    if not headlines:
-        return []
+    if not headlines or not client:
+        return ["neutral"] * len(headlines)
 
     prompt = (
         "Analyze the sentiment of the following financial headlines. "
-        "Return a JSON object with a single key 'sentiments' containing a list of strings. "
-        "The strings must be exactly: 'positive', 'negative', or 'neutral'. "
-        "The list order must match the headlines exactly.\n\n"
-        f"Headlines: {json.dumps(headlines)}"
+        "Return a JSON object with key 'sentiments' as a list of "
+        "'positive', 'negative', or 'neutral'.\n\n"
+        f"{json.dumps(headlines)}"
     )
 
     try:
         response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
-                {
-                    "role": "system",
-                    "content": "You are a financial analyst helper. Output valid JSON only."
-                },
-                {
-                    "role": "user",
-                    "content": prompt
-                }
+                {"role": "system", "content": "Output valid JSON only"},
+                {"role": "user", "content": prompt},
             ],
             response_format={"type": "json_object"}
         )
 
-        raw_content = response.choices[0].message.content
-        if not raw_content:
-            return ["neutral"] * len(headlines)
-
-        content = json.loads(raw_content)
+        content = json.loads(response.choices[0].message.content)
         sentiments = content.get("sentiments", [])
 
         if len(sentiments) != len(headlines):
@@ -112,43 +104,37 @@ def analyze_batch_sentiment(headlines: list) -> list:
         return sentiments
 
     except Exception as e:
-        print(f"AI Error: {e}")
+        print("AI Error:", e)
         return ["neutral"] * len(headlines)
 
 # -------------------------------------------------
-# 7. MAIN NEWS + SIGNAL ENDPOINT
+# NEWS + SIGNAL ENDPOINT
 # -------------------------------------------------
 
 @app.get("/news/{symbol}")
 def get_stock_news(symbol: str):
     symbol = symbol.upper()
 
-    # --- A. GET CURRENT PRICE ---
+    # Current price
     try:
-        quote_url = (
-            f"https://finnhub.io/api/v1/quote"
-            f"?symbol={symbol}&token={FINNHUB_API_KEY}"
-        )
-        quote_res = requests.get(quote_url, timeout=5)
-        current_price = quote_res.json().get("c", 0)
+        quote_url = f"https://finnhub.io/api/v1/quote?symbol={symbol}&token={FINNHUB_API_KEY}"
+        current_price = requests.get(quote_url, timeout=5).json().get("c", 0)
     except Exception:
         current_price = 0
 
-    # --- B. GET NEWS (LAST 7 DAYS) ---
-    today = datetime.now().date()
+    # News
+    today = datetime.utcnow().date()
     from_date = (today - timedelta(days=7)).strftime("%Y-%m-%d")
 
     try:
         news_url = (
             f"https://finnhub.io/api/v1/company-news"
-            f"?symbol={symbol}&from={from_date}&to={today}"
-            f"&token={FINNHUB_API_KEY}"
+            f"?symbol={symbol}&from={from_date}&to={today}&token={FINNHUB_API_KEY}"
         )
         articles = requests.get(news_url, timeout=5).json()[:7]
     except Exception:
         articles = []
 
-    # --- C. AI SENTIMENT ---
     headlines = [a.get("headline", "") for a in articles]
     sentiments = analyze_batch_sentiment(headlines)
 
@@ -157,7 +143,6 @@ def get_stock_news(symbol: str):
     for i, article in enumerate(articles):
         s = sentiments[i]
         article["sentiment"] = s
-
         if s == "positive":
             positive += 1
         elif s == "negative":
@@ -165,15 +150,9 @@ def get_stock_news(symbol: str):
         else:
             neutral += 1
 
-    score = 50 + (positive * 10) - (negative * 10)
-    score = max(0, min(100, score))
+    score = max(0, min(100, 50 + positive * 10 - negative * 10))
 
-    if score >= 60:
-        signal = "BUY"
-    elif score <= 40:
-        signal = "SELL"
-    else:
-        signal = "NEUTRAL"
+    signal = "BUY" if score >= 60 else "SELL" if score <= 40 else "NEUTRAL"
 
     return {
         "symbol": symbol,
@@ -184,16 +163,28 @@ def get_stock_news(symbol: str):
             "negative": negative,
             "neutral": neutral,
             "buy_score": score,
-            "signal": signal
+            "signal": signal,
         },
-        "news": articles
+        "news": articles,
     }
 
 # -------------------------------------------------
-# 8. DAY 4 – DEBUG PRICE CHECK (TEMPORARY)
+# DEBUG – PRICE CHECK (PROTECTED)
 # -------------------------------------------------
 
 @app.post("/debug/check-targets")
-def debug_check_targets():
+def debug_check_targets(current_user = Depends(get_current_user)):
     check_targets()
     return {"message": "Price target check executed"}
+
+# -------------------------------------------------
+# PROTECTED TEST
+# -------------------------------------------------
+
+@app.get("/protected")
+def protected(current_user = Depends(get_current_user)):
+    return {
+        "message": "You are authenticated",
+        "user_id": current_user.id,
+        "email": current_user.email,
+    }
